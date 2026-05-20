@@ -4,72 +4,72 @@ import { FiClock } from "react-icons/fi";
 
 function Footer() {
   return (
-    <footer className="px-16 py-24 bg-[#f5f5f5]">
+    <footer className="px-4 sm:px-6 lg:px-16 py-12 lg:py-24 bg-[#f5f5f5]">
 
       {/* Heading */}
-
       <div className="text-center">
-
-        <h1 className="text-[64px] font-bold uppercase">
+        
+        <h1 className="text-3xl sm:text-5xl lg:text-[64px] font-bold uppercase leading-tight">
           HOW TO ORDER
         </h1>
 
-        <p className="text-[28px] font-semibold mt-4">
+        <p className="text-lg sm:text-2xl lg:text-[28px] font-semibold mt-3 lg:mt-4">
           Simple and secure ordering process
         </p>
 
       </div>
 
       {/* Cards */}
-
-      <div className="grid grid-cols-3 gap-10 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-10 mt-12 lg:mt-20">
 
         {/* Card 1 */}
+        <div className="border border-gray-200 bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300">
 
-        <div className="border border-gray-200 bg-white p-8 rounded-sm">
+          <FaWhatsapp className="text-4xl sm:text-5xl mb-6 lg:mb-8" />
 
-          <FaWhatsapp className="text-5xl mb-8" />
-
-          <h2 className="text-2xl font-semibold mb-5">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-5">
             WhatsApp Order
           </h2>
 
-          <p className="text-gray-600 leading-8 text-lg">
+          <p className="text-gray-600 leading-7 text-base sm:text-lg">
             Contact us directly on WhatsApp for instant ordering and queries
           </p>
 
-          <button className="mt-10 font-semibold">
+          <button className="mt-6 lg:mt-10 font-semibold border-b border-black hover:text-green-600 transition-all duration-300">
             Message on WhatsApp
           </button>
 
         </div>
 
         {/* Card 2 */}
+        <div className="border border-gray-200 bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300">
 
-        <div className="border border-gray-200 bg-white p-8 rounded-sm">
+          <IoLocationOutline className="text-4xl sm:text-5xl mb-6 lg:mb-8" />
 
-          <IoLocationOutline className="text-5xl mb-8" />
-
-          <h2 className="text-2xl font-semibold mb-5">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-5">
             Bank Details
           </h2>
 
-          <div className="space-y-2 text-lg text-gray-700">
+          <div className="space-y-3 text-base sm:text-lg text-gray-700 break-words">
 
             <p>
-              <span className="font-semibold">Name:</span> Sachin Madhukar Paranjpe
+              <span className="font-semibold">Name:</span>{" "}
+              Sachin Madhukar Paranjpe
             </p>
 
             <p>
-              <span className="font-semibold">Bank:</span> HDFC Bank, Palghar
+              <span className="font-semibold">Bank:</span>{" "}
+              HDFC Bank, Palghar
             </p>
 
             <p>
-              <span className="font-semibold">Account:</span> 50200022980226
+              <span className="font-semibold">Account:</span>{" "}
+              50200022980226
             </p>
 
             <p>
-              <span className="font-semibold">IFSC:</span> HDFC0000663
+              <span className="font-semibold">IFSC:</span>{" "}
+              HDFC0000663
             </p>
 
           </div>
@@ -77,16 +77,15 @@ function Footer() {
         </div>
 
         {/* Card 3 */}
+        <div className="border border-gray-200 bg-white p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300">
 
-        <div className="border border-gray-200 bg-white p-8 rounded-sm">
+          <FiClock className="text-4xl sm:text-5xl mb-6 lg:mb-8" />
 
-          <FiClock className="text-5xl mb-8" />
-
-          <h2 className="text-2xl font-semibold mb-5">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 lg:mb-5">
             Delivery Info
           </h2>
 
-          <div className="space-y-5 text-lg text-gray-700">
+          <div className="space-y-4 text-base sm:text-lg text-gray-700 leading-7">
 
             <p>
               Courier charges additional based on location and quantity
@@ -107,8 +106,7 @@ function Footer() {
       </div>
 
       {/* Bottom */}
-
-      <div className="mt-20 border-t border-gray-300 pt-8 text-center text-gray-500">
+      <div className="mt-12 lg:mt-20 border-t border-gray-300 pt-6 lg:pt-8 text-center text-sm sm:text-base text-gray-500">
 
         © 2026 PARANJPE ATTARWALE
 
