@@ -21,10 +21,16 @@ function ProductCard({ image, title }) {
       </div>
 
       {/* Button */}
-      <button className="w-full bg-[#19a84c] text-white py-3 mt-4 text-sm sm:text-[15px] hover:bg-green-700 transition rounded-md">
-
+      <button
+        onClick={() =>
+          window.open(
+            "https://wa.me/+919700088555?text=Hello%20I%20want%20to%20order",
+            "_blank"
+          )
+        }
+        className="w-full bg-[#19a84c] text-white py-3 mt-4 text-sm sm:text-[15px] hover:bg-green-700 transition rounded-md"
+      >
         Order on Whatsapp
-
       </button>
 
     </div>

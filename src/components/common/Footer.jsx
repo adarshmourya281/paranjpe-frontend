@@ -8,7 +8,7 @@ function Footer() {
 
       {/* Heading */}
       <div className="text-center">
-        
+
         <h1 className="text-3xl sm:text-5xl lg:text-[64px] font-bold uppercase leading-tight">
           HOW TO ORDER
         </h1>
@@ -35,7 +35,12 @@ function Footer() {
             Contact us directly on WhatsApp for instant ordering and queries
           </p>
 
-          <button className="mt-6 lg:mt-10 font-semibold border-b border-black hover:text-green-600 transition-all duration-300">
+          <button
+            onClick={() =>
+              window.open("https://wa.me/+919700088555", "_blank")
+            }
+            className="mt-6 lg:mt-10 font-semibold border-b border-black hover:text-green-600 transition-all duration-300"
+          >
             Message on WhatsApp
           </button>
 
@@ -107,9 +112,14 @@ function Footer() {
 
       {/* Bottom */}
       <div className="mt-12 lg:mt-20 border-t border-gray-300 pt-6 lg:pt-8 text-center text-sm sm:text-base text-gray-500">
+        <p>© 2026 PARANJPE ATTARWALE</p>
 
-        © 2026 PARANJPE ATTARWALE
-
+        <p className="mt-2">
+          Designed by{" "}
+          <span className="font-semibold">
+            Sanstrojan Solutions Pvt Ltd
+          </span>
+        </p>
       </div>
 
     </footer>
