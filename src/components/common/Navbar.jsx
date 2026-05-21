@@ -1,4 +1,12 @@
 import { useState } from "react";
+import { useRef } from "react";
+// Helper function to scroll to footer
+const scrollToFooter = () => {
+  const footer = document.getElementById("footer-section");
+  if (footer) {
+    footer.scrollIntoView({ behavior: "smooth" });
+  }
+};
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 
@@ -54,19 +62,27 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
 
+
           <li className="cursor-pointer hover:text-black transition">
-            Rudraksh
+            <Link to="/rudraksh">Rudraksh</Link>
+          </li>
+          <li className="cursor-pointer hover:text-black transition">
+            <Link to="/Gemstone">Gemstone</Link>
+          </li>
+          <li className="cursor-pointer hover:text-black transition">
+            <Link to="/attar">Attar</Link>
+          </li>
+
+         
+
+          <li className="cursor-pointer hover:text-black transition">
+            <Link to="/new-launches">New Launches</Link>
           </li>
 
           <li className="cursor-pointer hover:text-black transition">
-            New Launches
+            <Link to="/our-story">Our Story</Link>
           </li>
-
-          <li className="cursor-pointer hover:text-black transition">
-            Our Story
-          </li>
-
-          <li className="cursor-pointer hover:text-black transition">
+          <li className="cursor-pointer hover:text-black transition" onClick={scrollToFooter}>
             Contact
           </li>
 
@@ -76,25 +92,41 @@ function Navbar() {
         {menuOpen && (
           <ul className="sm:hidden flex flex-col items-center gap-5 mt-6 text-[15px] text-gray-700 bg-white w-full py-6 rounded-xl shadow-lg">
 
+
             <li className="cursor-pointer hover:text-black transition font-medium">
               <Link to="/" onClick={() => setMenuOpen(false)}>
                 Home
               </Link>
             </li>
+            <li className="cursor-pointer hover:text-black transition">
+              <Link to="/rudraksh" onClick={() => setMenuOpen(false)}>
+                Rudraksh
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:text-black transition">
+              <Link to="/Gemstone" onClick={() => setMenuOpen(false)}>
+                Gemstone
+              </Link>
+            </li>
+            <li className="cursor-pointer hover:text-black transition">
+              <Link to="/attar" onClick={() => setMenuOpen(false)}>
+                Attar
+              </Link>
+            </li>
+            // Mobile Menu Links Update
 
             <li className="cursor-pointer hover:text-black transition">
-              Rudraksh
+              <Link to="/new-launches" onClick={() => setMenuOpen(false)}>
+                New Launches
+              </Link>
             </li>
 
             <li className="cursor-pointer hover:text-black transition">
-              New Launches
+              <Link to="/our-story" onClick={() => setMenuOpen(false)}>
+                Our Story
+              </Link>
             </li>
-
-            <li className="cursor-pointer hover:text-black transition">
-              Our Story
-            </li>
-
-            <li className="cursor-pointer hover:text-black transition">
+            <li className="cursor-pointer hover:text-black transition" onClick={() => { scrollToFooter(); setMenuOpen(false); }}>
               Contact
             </li>
 

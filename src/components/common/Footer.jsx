@@ -4,7 +4,7 @@ import { FiClock } from "react-icons/fi";
 
 function Footer() {
   return (
-    <footer className="px-4 sm:px-6 lg:px-16 py-12 lg:py-24 bg-[#f5f5f5]">
+    <footer id="footer-section" className="px-4 sm:px-6 lg:px-16 py-12 lg:py-24 bg-[#f5f5f5]">
 
       {/* Heading */}
       <div className="text-center">
@@ -117,8 +117,15 @@ function Footer() {
         <p className="mt-2">
           Designed by{" "}
           <span className="font-semibold">
-            Sanstrojan Solutions Pvt Ltd
-          </span>
+  <a
+    href="https://www.sanstrojan.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:underline"
+  >
+    Sanstrojan Solutions Pvt Ltd
+  </a>
+</span>
         </p>
       </div>
 

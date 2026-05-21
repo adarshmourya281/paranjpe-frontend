@@ -25,7 +25,7 @@ function GemHero() {
 
             <button className="border border-black px-6 sm:px-10 py-3 sm:py-4 text-sm hover:bg-black hover:text-white transition">
 
-              EXPLORE RUDRAKSH
+              EXPLORE GEMSTONE
 
             </button>
 

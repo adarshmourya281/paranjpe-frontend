@@ -14,10 +14,10 @@ function AttarHero() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8 md:mt-10">
             <button className="border-2 border-black px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg hover:bg-black hover:text-white transition">
-              EXPLORE ATTARS
+              SHOP NOW
             </button>
             <button className="border-2 border-black px-6 sm:px-8 md:px-10 py-3 sm:py-4 text-base sm:text-lg hover:bg-black hover:text-white transition">
-              EXPLORE RUDRAKSH
+              EXPLORE ATTARS
             </button>
           </div>
         </div>
