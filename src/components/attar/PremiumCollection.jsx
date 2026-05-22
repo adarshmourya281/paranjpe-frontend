@@ -6,24 +6,25 @@ import attar3 from "../../assets/attars/attar3.png";
 import attar4 from "../../assets/attars/attar4.png";
 
 function PremiumCollection() {
-  const products = [
+ const products = [
     {
       image: attar1,
-      name: "Aqua Frio",
+      name: "Ashwamegh",
     },
     {
       image: attar2,
-      name: "Aqua Frio",
+      name: "Devil's Advocate",
     },
     {
       image: attar3,
-      name: "Aqua Frio",
+      name: "Ramalkhun",
     },
     {
       image: attar4,
-      name: "Aqua Frio",
+      name: "Oud Damascus",
     },
   ];
+
 
   return (
     <section className="px-4 sm:px-8 lg:px-20 py-10">
