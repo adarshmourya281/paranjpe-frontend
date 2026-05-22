@@ -10,19 +10,19 @@ function LuxuryCollection() {
   const products = [
     {
       image: attar1,
-      title: "Aqua Frio",
+      title: "Mukhallat Emirates",
     },
     {
       image: attar2,
-      title: "Aqua Frio",
+      title: " Musk Nirvana",
     },
     {
       image: attar3,
-      title: "Aqua Frio",
+      title: "Oud Venice",
     },
     {
       image: attar4,
-      title: "Aqua Frio",
+      title: "Milaan Moods",
     },
   ];
 
