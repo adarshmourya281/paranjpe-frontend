@@ -9,22 +9,22 @@ import attar4 from "../../assets/attars/attar4.png";
 
 function AttarCollection() {
 
-  const products = [
+   const products = [
     {
       image: attar1,
       title: "Aqua Frio",
     },
     {
       image: attar2,
-      title: "Aqua Frio",
+      title: "Shamama Afreen",
     },
     {
       image: attar3,
-      title: "Aqua Frio",
+      title: "Najdeek",
     },
     {
       image: attar4,
-      title: "Aqua Frio",
+      title: "Raqs",
     },
   ];
 
